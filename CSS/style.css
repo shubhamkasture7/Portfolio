@@ -38,8 +38,7 @@ html {
 }
 
 .container .Header .links-box {
-  position: relative;
-  height: 100%;
+  position: relative;  
   width: 60%;
 }
 
@@ -49,7 +48,73 @@ html {
     position: relative; 
 }
 
+/* Page adjestment by declering size */
+.container .display .social-media-links {
+    display: inline;
+    position: relative;
+    align-items: flex-end;
+    margin: 18px 18px;
 
+}
+/* social media adjestment position  */
+
+.container .Header .links-box .links-box-child .links-item a {
+  font-size: clamp(1rem, 1.3vw,3rem);
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: 'Roboto Slab', serif;
+}
+
+.container .Header .links-box .logo {
+  font-size: clamp(1rem, 2vw,3rem);
+  font-family: 'Lemon', serif;
+  color: #fff;
+}
+
+.container .Header .social-media-links{
+   position: relative;
+   height: 100%;
+   width: 30%;
+
+}
+
+.container .Header .social-media-links .social-media-links-box {
+  height: 100%;
+  width: 100%;
+  padding: 0px 5px 0px 5px;
+}
+
+
+.container .Header .social-media-links .social-media-links-box .social-links {
+  list-style: none;
+  position: relative;
+  height: 50%;
+  width: 20%;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.container .Header .social-media-links .social-media-links-box li  {
+  font-size: clamp(1rem, 1vw,3rem);
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: 'Roboto Slab', serif;
+}
+
+.container .Header .links-box .links-box-child .links-item a:hover {
+  color: rgb(226, 89, 21);
+  cursor: pointer;
+}
+
+.container .Header .social-media-links .social-media-links-box li:hover {
+  color: #6EF3A5;
+  cursor: pointer;
+}
 /* @media screen and (max-width: 600px) {
     a{
         float: none;
