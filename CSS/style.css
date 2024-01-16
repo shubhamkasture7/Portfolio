@@ -52,6 +52,11 @@ html {
     position: relative; 
 }
 
+.links-box-child ::marker{
+  content: "💕";
+}
+
+
 /* Page adjestment by declering size */
 .container .display .social-media-links {
     display: inline;
