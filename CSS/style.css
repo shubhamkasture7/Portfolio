@@ -25,6 +25,7 @@ html {
     overflow: hidden;
     display: flex;
     flex: content; 
+    flex-wrap: wrap;
 }
 
 .container .Header {
@@ -135,17 +136,19 @@ html {
     }
 } */
 
-.center-box {
+.container .center-box {
   position: absolute;
   height: 100%;
   width: 80%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .container .center-box .center-box-leftchild {
   position:absolute;
   display:contents;
   height: 100%;
-  width: 80vm;
+  width: 80vw;
   background-color: transparent;
  
 }
@@ -158,14 +161,40 @@ html {
   text-transform: capitalize;
   text-align: left;
   position: relative;
-  margin: 25% 0% 8% 35px;
+  /* margin: 20% 0% 0% 35px; */
 }
 
 .container .center-box .center-box-leftchild .wc-txt {
   font-size: clamp(2rem, 3vw, 8rem);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 800;
+  font-weight: 600;
+  color: #000000;
+  text-transform: capitalize;
+  text-align: left;
   position: relative;
-  margin-left: 12%;
-  color: 5D3587 ;
+  /* margin: 29% 0% 0% 35px; */
 }
+
+.container .center-box .center-box-leftchild .prg-txt {
+  font-weight: 600;
+  color: #000000;
+  text-transform: capitalize;
+  text-align: left;
+  position: absolute;
+  /* margin: 35% 0% 0% 35px; */
+}
+.container .center-box {
+  height: calc(100vh - 80px);
+  width: 100%;
+  display: flex;
+}
+
+.container .center-box .center-box-leftchild .center-box-rightchild {
+  height: 100%;
+  width: 50%;
+  /* background: yellow; */
+  position: relative;
+}
+
+
+
