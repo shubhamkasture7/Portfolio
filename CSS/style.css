@@ -1,6 +1,6 @@
 color {
   color: #33215a;
-  color:  #5D3587
+  color:  #5d3587
   color #A367B1;
   color: #b88196;
 
@@ -22,7 +22,7 @@ html {
     max-width: 100vw;
     background-image: linear-gradient(120deg,#5D3587, #b88196);
     padding: 0px 5vmax 0px 5vmax;
-    overflow: hidden;
+    overflow: auto;
     display: flex;
     flex: content; 
     flex-wrap: wrap;
@@ -94,8 +94,9 @@ html {
 .container .Header .social-media-links .social-media-links-box {
   height: 100%;
   width: 100%;
-  padding: 0px 5px 0px 5px;
+  padding: 0px 5px 5px 5px;
   display: flex; 
+  flex-wrap: wrap;
 }
 
 
@@ -106,8 +107,8 @@ html {
   width: 20%;
   gap: 10px;
   display: flex;
-  flex: wrap;
   align-items: center;
+  padding: 10px 10px 10px 10px;
 }
 
 .container .Header .social-media-links .social-media-links-box li  {
@@ -137,15 +138,13 @@ html {
 } */
 
 .container .center-box {
-  position: absolute;
+  position: relative;
   height: 100%;
   width: 80%;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .container .center-box .center-box-leftchild {
-  position:absolute;
+  position: absolute;
   display:contents;
   height: 100%;
   width: 80vw;
@@ -160,33 +159,41 @@ html {
   color: #6EF3A5;
   text-transform: capitalize;
   text-align: left;
-  position: relative;
-  /* margin: 20% 0% 0% 35px; */
+  /* width: 450px; */
+  /* position: relative; */
+  margin: 110px 0% 0% 35px;
+
 }
 
 .container .center-box .center-box-leftchild .wc-txt {
-  font-size: clamp(2rem, 3vw, 8rem);
+  font-size: clamp(3rem, 4vw, 9rem);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
-  color: #000000;
+  color: #2b0a30;
   text-transform: capitalize;
   text-align: left;
-  position: relative;
-  /* margin: 29% 0% 0% 35px; */
+  /* position: relative; */
+  margin: 10px 0% 0% 35px;
+  /* width: 250px; */
+
 }
 
 .container .center-box .center-box-leftchild .prg-txt {
-  font-weight: 600;
-  color: #000000;
+  height: 150px;
+  font-size: clamp(1rem, 2vw, 6rem);
+  /* width: 255px; */
+  font-weight: 700;
+  color: #1f053a;
   text-transform: capitalize;
   text-align: left;
-  position: absolute;
-  /* margin: 35% 0% 0% 35px; */
+  /* position: absolute; */
+  margin: 40px 0% 0% 35px;
 }
+
 .container .center-box {
   height: calc(100vh - 80px);
   width: 100%;
-  display: flex;
+  flex-wrap: wrap;
 }
 
 .container .center-box .center-box-leftchild .center-box-rightchild {
@@ -194,7 +201,86 @@ html {
   width: 50%;
   /* background: yellow; */
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
+.container .center-box .center-box-rightchild {
+  background: transparent;
+}
 
+.container .center-box .center-box-rightchild .circle-main {
+  position: absolute;
+  height: 80%;
+  width: 40%;
+  background: linear-gradient(155deg, #16171aba 60%, #323438cc);
+  border-radius: 50%;
+  bottom: 8%;
+  left: 80%;
+  transform: translateX(-50%);
+  filter: blur(1px);
+  z-index: 0;
+}
 
+.container .center-box .center-box-rightchild .main-img {
+  position: absolute;
+  height: 95%;
+  /* width: 100%; */
+  border-radius: 38%;
+  bottom: 8.5%;
+  left: 80%;
+  transform: translateX(-50%);
+  z-index: 2; 
+}
+
+.container .center-box .center-box-rightchild .circle-1 {
+  height: 16%;
+  width: 9%;
+  background: #0c0c0c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  left: 62%;
+  position: absolute;
+  bottom: 16%;
+  transform: translate(-50%, -50%);
+  animation: rotation 0.5s linear infinite;
+}
+
+.container .center-box .center-box-rightchild .circle-2 {
+  height: 20%;
+  width: 11%;
+  position: absolute;
+  background: #0c0c0c;
+  display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   bottom: 50%;
+   transform: translate(-50%, -50%);
+   right: 25%;
+   z-index: 3;
+}
+
+.container .center-box .center-box-rightchild .circle-2 .circle-2-img {
+  height: 20vh;
+  width: 12vw;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.container .center-box .center-box-rightchild .circle-3 {
+  height: 20%;
+  width: 11%;
+  position: absolute;
+  background: #0c0c0c;
+  display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   bottom: 41%;
+   transform: translate(-50%, -50%);
+   right: -8%;
+   z-index: 3;
+}
