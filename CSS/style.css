@@ -284,3 +284,71 @@ html {
    right: -8%;
    z-index: 3;
 }
+
+.container .work-box {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.container .work-box .work-box-leftchild {
+  position: relative;
+  display:contents;
+  height: 100%;
+  width: 45vw;
+  background-color: transparent;  
+}
+
+.container .work-box .work-box-leftchild .works {
+  height: 25vh;
+  width: 45vw;
+  border: 4px solid blueviolet;
+  border-radius: 23px;
+  margin: 2vh 2vh 3vw 0;
+  padding: 40px 5px 10px 50px;
+  background-color: linear-gradient(red blue);
+}
+
+.container .work-box .work-box-leftchild .works:hover {
+  background-color: rgb(72, 106, 167);
+  scale: 105%;
+  border: 3px solid #060300;
+  cursor: pointer;
+  animation: workbox 1s infinite;
+}
+
+.container .work-box .work-box-leftchild h2 {
+  font-size: large;
+  text-align: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: clamp(1rem, 2vw, 6rem);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #372a53f7;
+  margin-bottom: 4vh;
+}
+
+.container .work-box .work-box-leftchild h3 {
+  font-size: medium;
+  text-align: left;
+  align-items: center;
+  font-weight: 400;
+  font-size: clamp(1rem, 2vw, 6rem);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #351d06c3;
+}
+
+@keyframes workbox {
+  0% {
+    border-color: #ff3366; /* Initial border color */
+  }
+  33% {
+    border-color: #ffcc00; /* Intermediate border color */
+  }
+  66% {
+    border-color: #22127c; /* Intermediate border color */
+  } 
+  100% {
+    border-color: #ff3366; /* Final border color */
+  }
+}
