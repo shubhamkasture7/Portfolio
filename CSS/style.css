@@ -6,6 +6,10 @@ color {
 
 }  
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -190,6 +194,27 @@ html {
   margin: 40px 0% 0% 35px;
 }
 
+.container .center-box .center-box-leftchild a {
+  font-size: clamp(1rem, 2.2vw, 6rem);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  bottom: 33%;
+  margin-left: 55px;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #2b0a30;
+}
+
+.prev, .next {
+  font-size: clamp(1rem, 1.5vw,3rem);
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: 'Roboto Slab', serif;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
 .container .center-box {
   height: calc(100vh - 80px);
   width: 100%;
@@ -248,6 +273,11 @@ html {
   animation: rotation 0.5s linear infinite;
 }
 
+.container .center-box .center-box-rightchild .circle-1 img {
+  height: 65%;
+  width: 65%;
+
+}
 .container .center-box .center-box-rightchild .circle-2 {
   height: 20%;
   width: 11%;
@@ -287,7 +317,7 @@ html {
 
 .container .work-box {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   position: relative;
 }
 
@@ -306,11 +336,12 @@ html {
   border-radius: 23px;
   margin: 2vh 2vh 3vw 0;
   padding: 40px 5px 10px 50px;
-  background-color: linear-gradient(red blue);
+  background-color: linear-gradient(, red blue);
+  transition: 1s;
 }
 
 .container .work-box .work-box-leftchild .works:hover {
-  background-color: rgb(72, 106, 167);
+  background-color: rgb(68, 105, 172);
   scale: 105%;
   border: 3px solid #060300;
   cursor: pointer;
@@ -324,8 +355,9 @@ html {
   font-weight: 600;
   font-size: clamp(1rem, 2vw, 6rem);
   font-family: Georgia, 'Times New Roman', Times, serif;
-  color: #372a53f7;
+  color: #2b2141f7;
   margin-bottom: 4vh;
+  text-decoration: underline;
 }
 
 .container .work-box .work-box-leftchild h3 {
@@ -351,4 +383,105 @@ html {
   100% {
     border-color: #ff3366; /* Final border color */
   }
+}
+
+.container .work-box .work-box-leftchild .work-box-rightchild {
+  height: 100%;
+  width: 50%;
+  /* background: yellow; */
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .work-box .work-box-rightchild {
+  background: transparent;
+}
+
+.container .work-box .work-box-rightchild .introduction {
+  font-size: 6vh;
+  font-weight: 500;
+  position: absolute;
+  font-style: oblique;
+  bottom: 92%;
+  left: 65%;
+  transform: translateX(-50%);
+  transition: 1s;
+  color: #383737;
+}
+
+.container .work-box .work-box-rightchild .introduction:hover {
+  scale: 1.1;
+  cursor: pointer;
+  color: #3d3a3a;
+}
+.container .work-box .work-box-rightchild .main-intro-name {
+  font-size: 5vh;
+  font-weight: 700;
+  position: absolute;
+  bottom: 55%;
+  left: 72%;
+  transform: translateX(-50%);
+ 
+}
+
+.container .work-box .work-box-rightchild .main-intro-name .h1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: initial;
+  transform: translate(22%);
+}
+.main-intro-name .tab {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: initial;
+  transform: translate(50%);
+}
+
+.container .work-box .work-box-rightchild .center-box-slogan {
+  color: #2b0a30;
+  position: absolute;
+  bottom: 43%;
+  left: 75%;
+  transform: translateX(-50%);  
+}
+
+.container .work-box .work-box-rightchild .center-box-slogan p {
+  font-size: 3vh;
+  font-family:Arial, Helvetica, sans-serif;
+  text-align: justify;
+  color: #6EF3A5;
+  cursor: none;
+  transition: 1050ms;
+}
+
+.container .work-box .work-box-rightchild .center-box-slogan p:hover{
+  scale: 1.1;
+}
+
+.container .work-box .work-box-rightchild .center-box-prg {
+  height: auto;
+  width: 37vw;
+  font-size: clamp(0.5rem, 1.1rem, 3rem);
+  
+  font-weight: 300;
+  position: absolute;
+  text-align: justify;
+  bottom: 15%;
+  left: 75%;
+  transform: translateX(-40%);
+  cursor: pointer;
+  transition: 1s;
+}
+
+.container .work-box .work-box-rightchild .center-box-prg:hover{
+  border: 2px solid rgb(3, 3, 3);
+  border-radius: 12px;
+  color: #33215a;
+  scale: 103%;
+  padding: 5px 5px 5px 5px;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
